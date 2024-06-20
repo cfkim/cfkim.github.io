@@ -425,6 +425,7 @@
     transform: scale(1.075);
     transition: 0.2s ease in;
     cursor: pointer;
+    
 }
 
 @media screen and (max-width: 960px){
@@ -539,6 +540,120 @@
     
 }
 
+
+/* projects section css */
+.projects {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem; /* Added padding top for spacing */
+    width: 100%; /* Ensure full width */
+
+}
+
+.projects h1{
+    background: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.projects__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects__card{
+    margin: 1rem;
+    height: 400px;
+    width: 525px;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.projects__card:nth-child(2){
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+
+}
+
+.projects h2 {
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+
+}
+
+.projects__card p {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+
+}
+
+.projects__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 330px;
+    right: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+
+}
+
+.projects__card:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease in;
+    cursor: pointer;
+    p, h2, button {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 960px){
+
+
+    .projects h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .projects h1 {
+        font-size: 1.2rem;
+    }
+
+    .projects__card {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
 
 
 /* footer css */
