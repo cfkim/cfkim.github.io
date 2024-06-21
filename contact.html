@@ -36,42 +36,38 @@
             </a>
           </li>
           <li class="navbar__btn">
-            <a href="/contact.html" class="button">
+            <a href="/" class="button">
               Contact
             </a>
           </li>
         </ul>
       </div>
     </nav>
-    <!-- hero section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Hi, I'm Christine</h1>
-          <h2>Software Engineer</h2>
-          <p>I love learning new skills and tools. I also love chess, volleyball, cafes, and Korean culture. </p>
-        </div>
-        <div class="main__img--container">
-          <img src="images/pic5.svg" alt="pic" id="main__img">
-        </div>
-      </div>
-    </div>
 
-    <!-- services section -->
-    <div class="services">
-      <h1>My Projects</h1>
-      <div class="services__container">
-        <div class="services__card">
-          <h2>Project 1</h2>
-          <p>House Price Guessing Game</p>
-          <button>Website</button>
+
+    <!-- contact form -->
+    <div class="contact">
+        <div class="contact__container">
+            <h1>let's connect!</h1>
+            <form action="submit.php" method="POST">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div class="contact__btn"><input type="submit" value="Submit"></div>
+                
+            </form>
         </div>
-        <div class="services__card">
-          <h2>Project 2</h2>
-          <p>To-do List</p>
-          <button>Website</button>
-        </div>
-      </div>
     </div>
 
     <!-- footer section -->
