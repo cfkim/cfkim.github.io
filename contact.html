@@ -47,23 +47,40 @@
 
     <!-- contact form -->
     <div class="contact">
+        <h1>let's connect!</h1>
+        <p>coffee will be on me.</p>
         <div class="contact__container">
-            <h1>let's connect!</h1>
             <form action="submit.php" method="POST">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname">
+                <div class="form--row">
+                    <div class="input--group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname">
+                    </div>
+                    <div class="input--group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname">
+                    </div>
+                    
+                </div>
+                <div class="form--row">
+                    <div class="input--group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form--row">
+                    <div class="input--group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                </div>
+                <div class="form--row">
+                    <div class="input--group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname">
-
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
-                
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject">
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 <div class="contact__btn"><input type="submit" value="Submit"></div>
                 
             </form>

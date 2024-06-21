@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -466,7 +466,8 @@
     background: #ff8177;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     background-size: 100%;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
     background-clip: text;
     -webkit-background-clip: text;
@@ -475,44 +476,66 @@
     -moz-text-fill-color: transparent;
 }
 
-.contact__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: #fff;
-}
-
 .contact h2 {
     position: absolute;
     top: 350px;
     left: 30px;
 }
 
+.contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
 .contact p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
     color:#fff;
+    margin-bottom: 2rem;
 }
-
-
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
   .contact__btn {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
   
+  .form--row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .input--group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+     
+  }
+
+  .input--group:not(:first-child) {
+    margin-left: 20px;
+}
+
+.input--group.label-first {
+    margin-right: 20px;
+}
+
+
+  .input--group label {
+    margin-bottom: 5px;
+  }
+
+  .input--group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
   input[type=submit] {
     color: #fff;
     padding: 10px 20px;
@@ -536,7 +559,7 @@ input[type=text], select, textarea {
 
     .contact h1 {
         font-size: 2rem;
-        margin-top: 12rem;
+        margin-top: 4rem;
     }
 }
 
@@ -646,8 +669,8 @@ input[type=text], select, textarea {
     flex-direction: column;
     align-items: center;
     padding-bottom: 2rem;
-    padding-top: 2rem; /* Added padding top for spacing */
-    width: 100%; /* Ensure full width */
+    padding-top: 2rem;
+    width: 100%;
 
 }
 
